@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,      // Enable decorator support
+    "emitDecoratorMetadata": true,       // Enable metadata for decorators
+    "strictPropertyInitialization": false,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

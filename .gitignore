@@ -1,0 +1,110 @@
+# Node.js and TypeScript
+node_modules/
+dist/
+build/
+.npm/
+.npm-cache/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Runtime data
+pids/
+*.pid
+*.pid.lock
+*.seed
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Dependency directories
+**/node_modules/
+**/bower_components/
+
+# Docker files
+docker-compose.override.yml
+docker-compose.override*.yml
+docker-compose.prod.yml
+.dockerignore
+
+# Frontend related files
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.expo/
+
+# React Native specific
+*.expo/
+*.expo-shared/
+ios/Pods/
+android/.gradle/
+android/app/build/
+
+# TypeScript
+*.tsbuildinfo
+*.d.ts
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux and system files
+.Trash-*
+.nfs*
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+
+# JetBrains (IntelliJ, WebStorm, PyCharm)
+.idea/
+*.iml
+
+# IDE files
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+
+# Docker
+**/docker-compose.yml
+docker-compose.override.yml
+**/.dockerignore
+
+# Backup files
+*.bak
+*.orig
+*.swp
+*.swo
+*.swn
+
+# Miscellaneous
+*.class
+*.cache
+*.project
+*.pyc
+*.pyo
+*.pyd
+*.pid
+
+# Project specific files
+/backend/.env
+/backend/.env.*
+/db/*
+*.sqlite3
+*.sqlite
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
