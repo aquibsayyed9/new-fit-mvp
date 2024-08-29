@@ -1,4 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
+import { WorkoutPlan } from "./workoutPlanModel";
+import { DietPlan } from "./dietPlanModel";
 
 @Entity()
 class User {
@@ -19,6 +21,12 @@ class User {
 
   @Column()
   country: string;
+
+  @OneToMany(() => WorkoutPlan, (workoutPlan) => workoutPlan.user)
+  workoutPlans: WorkoutPlan[];
+
+  @OneToMany(() => DietPlan, (dietPlan) => dietPlan.user)
+  dietPlans: DietPlan[];
 }
 
 export default User;
