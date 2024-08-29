@@ -101,4 +101,30 @@ router.post("/generate-workout", authMiddleware, PlanController.generateWorkout)
  */
 router.post("/generate-diet", authMiddleware, PlanController.generateDiet);
 
+
+/**
+ * @swagger
+ * /api/plans/accept-plan:
+ *   post:
+ *     summary: Accept a generated plan
+ *     tags: [Plans]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               planType:
+ *                 type: string
+ *               planId:
+ *                 type: integer
+ *     responses:
+ *       200:
+ *         description: Plan accepted successfully
+ *       500:
+ *         description: Internal server error
+ */
+router.post("/accept-plan", authMiddleware, PlanController.acceptPlan);
+
 export default router;

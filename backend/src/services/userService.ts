@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import User from "../models/userModel";
 import { AppDataSource } from "../data-source";
 
-const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key";
+const JWT_SECRET = process.env.JWT_SECRET ?? "";
 
 class UserService {
   private userRepository: Repository<User>;

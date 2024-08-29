@@ -6,7 +6,7 @@ import { AppDataSource } from "./data-source";
 import userRoutes from './routes/userRoutes';
 import planRoutes from './routes/planRoutes';
 
-const app: Application = express();
+export const app: Application = express();
 
 app.use(express.json());
 

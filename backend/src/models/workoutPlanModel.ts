@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToOne, OneToMany } from 'typeorm';
 import User from './userModel';
-import { Exercise } from './exerciseMode';
+import { Exercise } from './exerciseModel';
 
 @Entity('workout_plans')
 export class WorkoutPlan {
@@ -24,6 +24,9 @@ export class WorkoutPlan {
 
   @Column('jsonb')
   equipment: string[];
+
+  @Column({ default: false })
+  isAccepted: boolean;
 
   @CreateDateColumn()
   created_at: Date;

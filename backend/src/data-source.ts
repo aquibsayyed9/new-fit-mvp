@@ -2,7 +2,7 @@ import "reflect-metadata";
 import { DataSource } from "typeorm";
 import User from "./models/userModel";
 import { WorkoutPlan } from "./models/workoutPlanModel";
-import { Exercise } from "./models/exerciseMode";
+import { Exercise } from "./models/exerciseModel";
 import { DietPlan } from "./models/dietPlanModel";
 import { Meal } from "./models/mealModel";
 import { MealItem } from "./models/mealItemModel";

@@ -38,6 +38,9 @@ export class DietPlan {
   @Column('text', { nullable: true })
   special_instructions: string;
 
+  @Column({ default: false })
+  isAccepted: boolean;
+
   @CreateDateColumn()
   created_at: Date;
 
